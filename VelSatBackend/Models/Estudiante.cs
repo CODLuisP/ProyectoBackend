@@ -12,4 +12,6 @@
     }
     //Lo demás lo veo bien, lánzalo UwU
     //gholAAAA
+
+    //SABES QUE ERES UN GAY
 }
