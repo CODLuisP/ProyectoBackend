@@ -8,6 +8,7 @@
 
         public int Edad { get; set; }
 
-        public string Correo { get; set; } = null!;
+        public string Email { get; set; } = null!;
     }
+    //Lo demás lo veo bien, lánzalo UwU
 }
