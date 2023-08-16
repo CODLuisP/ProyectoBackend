@@ -1,0 +1,25 @@
+﻿@model IEnumerable<VelSatBackend.Models.Estudiante>
+
+<h2>Lista de Estudiantes</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <!-- Otros campos de la tabla -->
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var estudiante in Model)
+        {
+            <tr>
+                <td>@estudiante.IdEstudiantes</td>
+                <td>@estudiante.Nombre</td>
+                <td>@estudiante.Edad</td>
+                <td>@estudiante.Correo</td>
+                <!-- Otros campos de la tabla -->
+            </tr>
+        }
+    </tbody>
+</table>
