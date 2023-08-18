@@ -23,7 +23,6 @@ builder.Services.AddTransient<IDbConnection>((sp) =>
 });
 
 // Agregar el repositorio a la inyección de dependencias
-builder.Services.AddScoped<EstudianteRepository>();
 builder.Services.AddScoped<UserRepository>();
 builder.Services.AddScoped<DA_Logica>();
 

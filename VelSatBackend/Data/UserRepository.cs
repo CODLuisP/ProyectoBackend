@@ -22,10 +22,10 @@ namespace VelSatBackend.Data
             return _dbConnection.Query<User>("Select * from users").ToList();
         }
 
-        public User ValidarUsersDa(string email, string password) {
+        public User ValidarUsersDa(string login, string clave) {
 
-            return _dbConnection.QueryFirstOrDefault<User>("SELECT * FROM users WHERE Email = @Email AND Password = @Password",
-            new { Email = email, Password = password });
+            return _dbConnection.QueryFirstOrDefault<User>("SELECT * FROM users WHERE Login = @Login AND Clave = @Clave",
+            new { Login = login, Clave = clave });
 
 
         }

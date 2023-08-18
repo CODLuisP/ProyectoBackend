@@ -16,9 +16,9 @@ namespace VelSatBackend.Data
             return _userRepository.AllUsers();
     }
 
-       public User ValidarUser(string _email, string _password)
+       public User ValidarUser(string _login, string _clave)
         {
-            return _userRepository.ValidarUsersDa(_email, _password);
+            return _userRepository.ValidarUsersDa(_login, _clave);
         }
     }
 }

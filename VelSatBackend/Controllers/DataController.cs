@@ -12,19 +12,19 @@ namespace VelSatBackend.Controllers
 
         private string _connection = @"server=localhost;port=3306;database=crudasp;uid=root;password=12345678";
 
-        [HttpGet]
-        public IActionResult Get() {
+        //[HttpGet]
+        //public IActionResult Get() {
 
-            IEnumerable<Models.Estudiante> lst = null;
+           // IEnumerable<Models.Estudiante> lst = null;
 
-            using(var db = new MySqlConnection(_connection) )
-            {
-                var sql = "select * from estudiantes";
-                lst = db.Query<Models.Estudiante>(sql);
-            }
+           // using(var db = new MySqlConnection(_connection) )
+          //  {
+            //    var sql = "select * from estudiantes";
+               // lst = db.Query<Models.Estudiante>(sql);
+           // }
 
-            return Ok(lst);
+            //return Ok(lst);
           
-        }
+        //}
     }
 }

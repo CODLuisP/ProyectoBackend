@@ -18,7 +18,7 @@ namespace VelSatBackend.Controllers
         [HttpPost]
         public IActionResult Index(User _user)
         {
-            var user = _daUser.ValidarUser(_user.Email, _user.Password);
+            var user = _daUser.ValidarUser(_user.Login, _user.Clave);
             if (user != null) { 
                 return RedirectToAction("Index","Home");
             }
