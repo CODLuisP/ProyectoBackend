@@ -10,7 +10,6 @@ namespace VelSatBackend.Controllers
     public class DataController : ControllerBase
     {
 
-        private string _connection = @"server=localhost;port=3306;database=crudasp;uid=root;password=12345678";
 
         //[HttpGet]
         //public IActionResult Get() {
